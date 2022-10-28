@@ -7,4 +7,4 @@ The methodology was deployed to identify social media trends to be included in a
 The functions of the 5 code files in the Code folder are described in the respective titles. Codes are commented in detail and organized in blocks.
 
 ### User Guide
-The User Guide provides more details about the code and how the code can be used by the IT department.
+The User Guide in the Code folder provides more details about the code and how the code can be used by the IT department.

@@ -30,7 +30,7 @@ Because of the time restraint of the project, we decided to go with existing API
 
 We also considered the social media platform TikTok because of its increasing popularity. Its abundance of genuine user-generated content produces valuable trends businesses don't want to miss out on.
 
-The client's IT department pointed us to an API website they had been using, and we discovered TikTok Scraper API by JoTucker. This API returns:
+The client's IT department pointed us to an API website they had been using, and we discovered TikTok Scraper API by JoTucker. This API returns data about [videos](https://github.com/Mona0102/TikTok-Trend-Detection/blob/main/Code/1.Get%20Videos%20Multiple%20Hashtags.ipynb) and [comments](https://github.com/Mona0102/TikTok-Trend-Detection/blob/main/Code/2.Get%20Comments.ipynb):
 - Video caption, id, timestamp, and URL
 - Comment text, id, the id of the video it belongs, timestamp
 - Comments and likes count

@@ -16,6 +16,12 @@ Mona led a team of 5 students and collectively built a pipeline that collects Ti
 
 The methodology was deployed to identify social media trends to be included in a dashboard for product managers. Product managers can explore analysis results, extract insights and make new product development decisions backed by social listening data. This analysis showcases viral or potential trends and is crucial for the client company's negotiation with partner vendors.
 
+### Key Assumptions
+1. We will still be able to collect text data from TikTok using API in the future. 
+2. Our pipeline will be effective as long as we have the data needed.
+3. Trends within 6-month period are most useful for identifying trends.
+4. The market is mainly in North America where most customers speak English.
+
 ### Data Source and API
 The project uses an exsiting API called TikTok Scraper API on Rapid API.
 (https://rapidapi.com/JoTucker/api/tiktok-scraper2/)
@@ -30,6 +36,7 @@ The client's IT department pointed us to an API website that they had been using
 After purchasing the Mega plan, we were able to request sufficient and useful data for our project.
 
 ### NLP (Natural Language Processing)
+
 
 ### Code Files
 The functions of the 5 code files in the Code folder are described in the respective titles. Codes are commented in detail and organized in blocks.

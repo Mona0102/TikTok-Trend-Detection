@@ -23,8 +23,7 @@ The methodology was deployed to identify social media trends to be included in a
 4. The market is mainly in North America, where most customers speak English.
 
 ### Data Source and API
-The project uses an existing API called TikTok Scraper API on Rapid API.
-(https://rapidapi.com/JoTucker/api/tiktok-scraper2/)
+The project uses an existing API called [TikTok Scraper API](https://rapidapi.com/JoTucker/api/tiktok-scraper2/) on Rapid API.
 Because of the time restraint of the project, we decided to go with existing APIs instead of building our own scraper. We analyzed potential data sources, including the official APIs of Facebook, Instagram, and Twitter, and concluded that these official APIs provided limited data. Besides, data collected from these platforms contained a lot of robot-generated or irrelevant information.
 
 We also considered the social media platform TikTok because of its increasing popularity. Its abundance of genuine user-generated content produces valuable trends businesses don't want to miss out on.

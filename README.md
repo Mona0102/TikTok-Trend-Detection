@@ -7,7 +7,7 @@ The client is now looking into building an engine that utilizes social media dat
 
 ### Project Objectives
 Create a pipeline/process to source and analyze social media data and predict the future trend of kitchenware and/or household products.
-- Use Rapid API to collect social media data.
+- Use API to collect social media data.
 - Use programming languages, preferably Python, to clean and analyze possible trends. 
 - Identify trendy products before the peak of the trend.
 
@@ -15,6 +15,21 @@ Create a pipeline/process to source and analyze social media data and predict th
 Mona led a team of 5 students and collectively built a pipeline that collects TikTok data through API and audio recognition python packages, cleanses and transforms text data with NLP techniques, and detects trends through time series analysis. 
 
 The methodology was deployed to identify social media trends to be included in a dashboard for product managers. Product managers can explore analysis results, extract insights and make new product development decisions backed by social listening data. This analysis showcases viral or potential trends and is crucial for the client company's negotiation with partner vendors.
+
+### Data Source and API
+The project uses an exsiting API called TikTok Scraper API on Rapid API.
+(https://rapidapi.com/JoTucker/api/tiktok-scraper2/)
+Because of the time restraint of the project, we decided to go with existing APIs instead of building our own scraper. We analyzed potential data sources including the official APIs of Facebook, Instagram, and Twitter and concluded that these official APIs provided limited data. Besides, data collected from these platforms contained a lot of robot-generated or irrelavant information.
+
+We also considered social media platform TikTok because of its increasing popularity. Its abundance of genuine user-generated content produces valuable trends businesses don't want to miss out on.
+
+The client's IT department pointed us to an API website that they had been using and we discovered TikTok Scraper API by JoTucker. This API returns:
+- Video caption, id, timestamp, and url
+- Comment text, id, the id of the video it belongs, timestamp
+- Comments and likes count  
+After purchasing the Mega plan, we were able to request sufficient and useful data for our project.
+
+### NLP (Natural Language Processing)
 
 ### Code Files
 The functions of the 5 code files in the Code folder are described in the respective titles. Codes are commented in detail and organized in blocks.

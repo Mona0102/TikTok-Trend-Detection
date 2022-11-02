@@ -22,7 +22,9 @@ The methodology was deployed to identify social media trends to be included in a
 3. Trends within a 6-month period are most useful for identifying trends.
 4. The market is mainly in North America, where most customers speak English.
 
-### Data Source and API
+## Technical Challenges
+### 1. Data Source and Quality
+#### 1.1 API
 The project uses an existing API called [TikTok Scraper API](https://rapidapi.com/JoTucker/api/tiktok-scraper2/) on Rapid API.
 Because of the time restraint of the project, we decided to go with existing APIs instead of building our own scraper. We analyzed potential data sources, including the official APIs of Facebook, Instagram, and Twitter, and concluded that these official APIs provided limited data. Besides, data collected from these platforms contained a lot of robot-generated or irrelevant information.
 
@@ -31,10 +33,13 @@ We also considered the social media platform TikTok because of its increasing po
 The client's IT department pointed us to an API website they had been using, and we discovered TikTok Scraper API by JoTucker. This API returns:
 - Video caption, id, timestamp, and URL
 - Comment text, id, the id of the video it belongs, timestamp
-- Comments and likes count  
+- Comments and likes count
 After purchasing the Mega plan, we were able to request sufficient and useful data for our project.
 
-### NLP (Natural Language Processing)
+#### 1.2 Speech Recognition 
+
+### 2. Data Cleansing and Analyzing
+#### 2.1 NLP (Natural Language Processing)
 
 
 ### Code Files

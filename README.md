@@ -37,7 +37,7 @@ The client's IT department pointed us to an API website they had been using, and
 
 After purchasing the Mega plan, we were able to request sufficient and useful data for our project.
 
-#### 1.2 Speech Recognition 
+#### 1.2 [Speech Recognition](https://github.com/Mona0102/TikTok-Trend-Detection/blob/main/Code/3.Sound%20Recognition%20for%20Videos.ipynb) 
 Some video captions don't specify the product talked about in the video. We transcripted video audio using Python library SpeechRecognition and automated the process with Selenium webdriver and Moviepy. We downloaded each video as a temporary file, ripped audio from the video, ran the Recognizer function in the speech recognition package to transcribe the audio, and saved the text data to the respective row. This step gave us more useful text data for text analysis later on.
 
 ### 2. Data Cleansing and Analyzing

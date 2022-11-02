@@ -43,3 +43,5 @@ The functions of the 5 code files in the Code folder are described in the respec
 
 ### User Guide
 The User Guide in the Code folder provides more details about the code and how the IT department can use it.
+
+------------------------------------Updated on 11.2.2022------------------------------------

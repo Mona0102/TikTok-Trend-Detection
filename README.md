@@ -34,6 +34,7 @@ The client's IT department pointed us to an API website they had been using, and
 - Video caption, id, timestamp, and URL
 - Comment text, id, the id of the video it belongs, timestamp
 - Comments and likes count
+
 After purchasing the Mega plan, we were able to request sufficient and useful data for our project.
 
 #### 1.2 Speech Recognition 

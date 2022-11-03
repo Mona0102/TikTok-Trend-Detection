@@ -24,8 +24,10 @@ The methodology was deployed to identify social media trends to be included in a
 
 ## Technical Challenges
 ### 1. Data Source and Quality
+We extracted over 10k videos from 13 hashtags. We also extracted over 300k comments from 13 hashtags.
+
 #### 1.1 API
-The project uses an existing API called [TikTok Scraper API](https://rapidapi.com/JoTucker/api/tiktok-scraper2/) on Rapid API.
+The project used an existing API called [TikTok Scraper API](https://rapidapi.com/JoTucker/api/tiktok-scraper2/) on Rapid API.
 Because of the time restraint of the project, we decided to go with existing APIs instead of building our own scraper. We analyzed potential data sources, including the official APIs of Facebook, Instagram, and Twitter, and concluded that these official APIs provided limited data. Besides, data collected from these platforms contained a lot of robot-generated or irrelevant information.
 
 We also considered the social media platform TikTok because of its increasing popularity. Its abundance of genuine user-generated content produces valuable trends businesses don't want to miss out on.
@@ -38,17 +40,30 @@ The client's IT department pointed us to an API website they had been using, and
 After purchasing the Mega plan, we were able to request sufficient and useful data for our project.
 
 #### 1.2 [Speech Recognition](https://github.com/Mona0102/TikTok-Trend-Detection/blob/main/Code/3.Sound%20Recognition%20for%20Videos.ipynb) 
-Some video captions don't specify the product talked about in the video. We transcripted video audio using Python library SpeechRecognition and automated the process with Selenium webdriver and Moviepy. We downloaded each video as a temporary file, ripped audio from the video, ran the Recognizer function in the speech recognition package to transcribe the audio, and saved the text data to the respective row. This step gave us more useful text data for text analysis later on.
+Some video captions don't specify the product mentioned in the video. We transcripted video audio using Python library SpeechRecognition and automated the process with Selenium webdriver and Moviepy. We downloaded each video as a temporary file, ripped audio from the video, ran the Recognizer function in the speech recognition package to transcribe the audio, and saved the text data to the respective row. This step gave us more useful text data for text analysis later on.
 
 ### 2. Data Cleansing and Analyzing
+After cleaning the video dataset (only keeping videos from 6/2020 to 5/2022 and remove videos with blank transcripts) and the comment dataset using NLP techniques and combining the two datasets, we ended up with a more comprehensive dataset of 249,953 rows.
+
 #### 2.1 NLP (Natural Language Processing)
+##### 2.1.1 Bigram(Ngram) Frequency
+
+Top 20 bigrams in videos:
+stainless steel, cutting board, cast iron, salt pepper, non stick, air fryer, ground beef, ice cream, dishwasher safe, drying rack,paper towl, aqua pure, spice rack, ease store, knife set, store gift, meal prep, olive oil, dutch oven, peanut butter.
+
+Top 20 bigrams in comments (after removing non-English words and repeated words):
+cinnamon toast, toast crunch, cast iron, cumin powder, stainless steel, salt pepper, cutting board, paper towel, non stick, ice cream, vacuum sealer, game changer, spice rack, wood burning, crunch seasoning, rice dispenser, baking soda, counter tops, air fryer, empty space
+
+##### 2.1.2 Corlor Bigram
+We created a function to search top color bigrams. It can also be used to search top bigrams of any word.
+
+#### 2.2 Time Series (Trend) Analysis
 
 
-### Code Files
-The functions of the 5 code files in the Code folder are described in the respective titles. Codes are commented in detail and organized in blocks.
 
 ### User Guide
 The User Guide in the Code folder provides more details about the code and how the IT department can use it.
 
-
+### Limitations
+The API cannot extract all the videos from one hashtag.
 (Updated on 11.2.2022)

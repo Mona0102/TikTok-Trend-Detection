@@ -67,4 +67,4 @@ The User Guide in the Code folder provides more details about the code and how t
 
 ### Limitations
 The API cannot extract all the videos from one hashtag.
-(Updated on 11.2.2022)
+(Updated on 11.4.2022)

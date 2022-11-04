@@ -55,6 +55,7 @@ Top 20 bigrams in comments (after removing non-English words and repeated words)
 cinnamon toast, toast crunch, cast iron, cumin powder, stainless steel, salt pepper, cutting board, paper towel, non stick, ice cream, vacuum sealer, game changer, spice rack, wood burning, crunch seasoning, rice dispenser, baking soda, counter tops, air fryer, empty space
 
 ##### 2.1.2 Corlor Bigram
+Color is one of the most important visual assets of the client's brands. Identifying what colors are trendy is extremely valuable to the client.
 We created a function to search top color bigrams. It can also be used to search top bigrams of any word.
 
 #### 2.2 Time Series (Trend) Analysis

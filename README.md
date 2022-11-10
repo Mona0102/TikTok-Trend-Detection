@@ -44,7 +44,7 @@ After purchasing the Mega plan, we were able to request sufficient and useful da
 #### 1.2 [Speech Recognition](https://github.com/Mona0102/TikTok-Trend-Detection/blob/main/Code/3.Sound%20Recognition%20for%20Videos.ipynb) 
 Some video captions don't specify the product mentioned in the video. We transcripted video audio using Python library SpeechRecognition and automated the process with Selenium webdriver and Moviepy. We downloaded each video as a temporary file, ripped audio from the video, ran the Recognizer function in the speech recognition package to transcribe the audio, and saved the text data to the respective row. This step gave us more useful text data for text analysis later on.
 
-### 2. Data Cleansing and Analyzing
+### 2. [Data Cleansing and Analyzing](https://github.com/Mona0102/TikTok-Trend-Detection/blob/main/Code/4.NLP%2C%20Bigrams%20and%20Colors%20Analysis.ipynb)
 After cleaning the video dataset (only keeping videos from 6/2020 to 5/2022 and remove videos with blank transcripts) and the comment dataset using NLP techniques and combining the two datasets, we ended up with a more comprehensive dataset of 249,953 rows. We only kept text data in English because that's the clieint business' primary customers.
 
 #### 2.1 NLP (Natural Language Processing)
@@ -60,7 +60,7 @@ cinnamon toast, toast crunch, cast iron, cumin powder, stainless steel, salt pep
 Color is one of the most important visual assets of the client's brands. Identifying what colors are trendy is extremely valuable to the client.
 We created a function to search top color bigrams. It can also be used to search top bigrams of any word.
 
-#### 2.2 Time Series (Trend) Analysis
+#### 2.2 [Time Series (Trend) Analysis](https://github.com/Mona0102/TikTok-Trend-Detection/blob/main/Code/5.Trend%20Detection.ipynb)
 The team and the client indentified 3 types of trend based on the dataset and business understanding. 
 Type 1 - New Trend
 - There is no data before the recent 6 months (before 12/2021)
@@ -76,9 +76,14 @@ Type 3 - Step Change
 - There are some data before the recent 6 months (before 12/2021)
 - The slope of the recent 6 months is positive
 
-### User Guide
+### [User Guide](https://github.com/Mona0102/TikTok-Trend-Detection/blob/main/Code/User%20Guide%20Analysis%20Using%20TikTok.pdf)
 The User Guide in the Code folder provides more details about the code and how the IT department can use it.
 
 ### Limitations
-The API cannot extract all the videos from one hashtag.
+- The API cannot extract all the videos from one hashtag.
+- Mainly used data from one social media platform. 
+- Mainly focus on bigrams and color-related bigrams.
+- Other criteria for trend detection exist.
+- Hard coding issue.
+
 (Updated on 11.10.2022)

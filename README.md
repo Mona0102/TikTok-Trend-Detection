@@ -1,4 +1,6 @@
-# TikTok-Trend-Detection
+# TikTok-Trend-Detection (Summer 2022)
+Team Members: Yuanying Mo, Fengming Yang, Kodi Leith, Yuhan Tang, Alexis Munguia, Mengying Jin
+Instructors: Dr. Jim Hoover, Taikgun Song
 
 ## Business Objective
 The client is a leading company in developing consumer products for the home. Its product development process is initiated by various factors such as retail partners, industry trends, competitors' actions, information from teams and factories, social media buzz, reviews, and google trends. Currently, its internal data analytics system only gathers data from Amazon (rankings, reviews). Its analytics team does research online with known keywords and uses that information to decide whether a product is or will be a trend. They then pitch the idea to a retail partner and move forward.
@@ -8,7 +10,7 @@ The client is now looking into building an engine that utilizes social media dat
 ## Project Objectives
 Create a pipeline/process to source and analyze social media data and predict the future trend of kitchenware and household products.
 - Use API to collect social media data.
-- Use programming languages, preferably Python, to clean and analyze possible trends. 
+- Use programming languages, Python, to clean and analyze possible trends. 
 - Identify trendy products before the peak of the trend.
 
 ## Outcomes
@@ -43,7 +45,7 @@ After purchasing the Mega plan, we were able to request sufficient and useful da
 Some video captions don't specify the product mentioned in the video. We transcripted video audio using Python library SpeechRecognition and automated the process with Selenium webdriver and Moviepy. We downloaded each video as a temporary file, ripped audio from the video, ran the Recognizer function in the speech recognition package to transcribe the audio, and saved the text data to the respective row. This step gave us more useful text data for text analysis later on.
 
 ### 2. Data Cleansing and Analyzing
-After cleaning the video dataset (only keeping videos from 6/2020 to 5/2022 and remove videos with blank transcripts) and the comment dataset using NLP techniques and combining the two datasets, we ended up with a more comprehensive dataset of 249,953 rows.
+After cleaning the video dataset (only keeping videos from 6/2020 to 5/2022 and remove videos with blank transcripts) and the comment dataset using NLP techniques and combining the two datasets, we ended up with a more comprehensive dataset of 249,953 rows. We only kept text data in English because that's the clieint business' primary customers.
 
 #### 2.1 NLP (Natural Language Processing)
 ##### 2.1.1 Bigram(Ngram) Frequency
@@ -59,12 +61,24 @@ Color is one of the most important visual assets of the client's brands. Identif
 We created a function to search top color bigrams. It can also be used to search top bigrams of any word.
 
 #### 2.2 Time Series (Trend) Analysis
+The team and the client indentified 3 types of trend based on the dataset and business understanding. 
+Type 1 - New Trend
+- There is no data before the recent 6 months (before 12/2021)
+- There are some data during the recent 6 months (after 12/2021)
+- The slope for 2-year data is positive
 
+Type 2 - Peaked Trend
+- There is a peak during the recent 6 months (after 12/2021)
+We produced a function to return the trendy videos' links where we can further investigate the trend.
 
+Type 3 - Step Change
+- There is no peak in the last 6 months (after 12/2021)
+- There are some data before the recent 6 months (before 12/2021)
+- The slope of the recent 6 months is positive
 
 ### User Guide
 The User Guide in the Code folder provides more details about the code and how the IT department can use it.
 
 ### Limitations
 The API cannot extract all the videos from one hashtag.
-(Updated on 11.4.2022)
+(Updated on 11.10.2022)

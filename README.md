@@ -62,7 +62,8 @@ Color is one of the most important visual assets of the client's brands. Identif
 We created a function to search top color bigrams. It can also be used to search top bigrams of any word.
 
 #### 2.2 [Time Series (Trend) Analysis](https://github.com/Mona0102/TikTok-Trend-Detection/blob/main/Code/5.Trend%20Detection.ipynb)
-The team and the client indentified 3 types of trend based on the dataset and business understanding. 
+The team and the client indentified 3 types of trend based on the dataset and business understanding. Below are the criteria for the 3 types of trends.
+
 Type 1 - New Trend
 - There is no data before the recent 6 months (before 12/2021)
 - There are some data during the recent 6 months (after 12/2021)
@@ -77,8 +78,10 @@ Type 3 - Step Change
 - There are some data before the recent 6 months (before 12/2021)
 - The slope of the recent 6 months is positive
 
+The code produced lists of bigrams that exhibit these trends.
+
 ### [User Guide](https://github.com/Mona0102/TikTok-Trend-Detection/blob/main/Code/User%20Guide%20Analysis%20Using%20TikTok.pdf)
-The User Guide in the Code folder provides more details about the code and how the IT department can use it.
+Kodi created a User Guide for the client's IT department to better understand the code.
 
 ### Limitations
 - The API cannot extract all the videos from one hashtag.

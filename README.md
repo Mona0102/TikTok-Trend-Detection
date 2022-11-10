@@ -1,5 +1,6 @@
 # TikTok-Trend-Detection (Summer 2022)
 Team Members: Yuanying Mo, Fengming Yang, Kodi Leith, Yuhan Tang, Alexis Munguia, Mengying Jin
+
 Instructors: Dr. Jim Hoover, Taikgun Song
 
 ## Business Objective
